@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&family=PT+Sans:ital@1&family=Poppins:wght@300;400&family=Source+Sans+Pro:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", "Inter", sans-serif;
+}
+header {
+  background-color: black;
+  color: white;
+  height: 9vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+  width: 90%;
+}
+.nav-child {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.current-pg {
+  background-color: rgb(255, 199, 56);
+  color: black;
+  /* border: 3px solid lightcyan; */
+  display: flex;
+  align-items: center;
+}
+.current-pg:hover {
+  /* background-color: rgb(216, 216, 14); */
+  color: blue;
+  /* border: 5px solid white; */
+  border: 3px solid lightcyan;
+}
+.rest-pg {
+  display: flex;
+  align-items: center;
+}
+.rest-pg:hover {
+  border: 3px solid lightcyan;
+
+  background-color: rgb(255, 199, 56);
+}
+.rest-pg a {
+  text-decoration: none;
+  color: white;
+}
+.rest-pg a:hover {
+  color: black;
+}
+.current-pg a {
+  text-decoration: none;
+  color: white;
+}
+.nav-child li {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .nav-child {
+    display: none;
+  }
+  nav {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    /* align-items: center; */
+  }
+}
+/* HEADER END */
+/* HERO START */
+.hero {
+  background-color: lightgreen;
+}
+.hero-content {
+  margin: auto;
+  padding: 30px 0;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-img {
+  border-radius: 0 50% 50% 0;
+}
+.hero-qualities {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 30px;
+}
+.quality-service {
+  list-style: none;
+}
+.quality-service:hover {
+  /* background-color: black; */
+  color: green;
+}
+.quality-img {
+  border: 2px solid green;
+  padding: 20px;
+  border-radius: 50% 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+    row-gap: 30px;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+  .hero-qualities {
+    flex: 0 1;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .quality-service {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    /* justify-content: center; */
+    align-items: center;
+  }
+}
+/* HERO STYLING END */
+/* PRODUCT SECTION START */
+/* PRODUCT ONE */
+.product-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  row-gap: 8px;
+}
+.product-one {
+  text-align: center;
+  justify-content: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  row-gap: 10px;
+  width: 250px;
+  border: 1px inset black;
+  align-items: center;
+}
+.product-card:hover {
+  color: green;
+  background-color: aliceblue;
+}
+/* PRODUCT ONE END  */
+/* PRODUCT TWO START */
+.product-two {
+  text-align: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+.see-more {
+  visibility: hidden;
+  width: 30%;
+  align-self: center;
+  border: 3px solid black;
+  border-radius: 12px;
+  background-color: yellow;
+  height: 30px;
+}
+.product-two-catalog {
+  text-decoration: none;
+  color: black;
+}
+.product-card-hidden:hover {
+  color: green;
+  background-color: aliceblue;
+}
+.product-card-hidden {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  row-gap: 10px;
+  width: 250px;
+  border: 1px inset black;
+  align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+  .product-section {
+    width: 100%;
+  }
+  .product-two {
+    width: 100%;
+  }
+  .product-card {
+    width: 80%;
+  }
+  .product-card-hidden {
+    display: none;
+  }
+  .see-more {
+    visibility: visible;
+  }
+}
+/* PRODUCT SECTION END HERE */
+/* FOOTER START HERE */
+footer {
+  background-color: black;
+  color: white;
+  height: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
