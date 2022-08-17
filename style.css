@@ -180,6 +180,8 @@ nav {
   max-width: 50px;
   height: 40%;
   width: 50%;
+  min-height: 45px;
+  min-width: 45px;
 }
 
 @media screen and (max-width: 1024px) {
