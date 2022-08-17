@@ -8,6 +8,8 @@ body {
   font-family: "Poppins", "Inter", sans-serif;
 }
 header {
+  /* background-color: #B3E283; */
+
   /* background-color: #85EF47; */
   background-color: black;
   color: white;
@@ -23,9 +25,9 @@ nav {
 }
 .logo {
   /* top: 5px; */
-  padding-top: 18px;
+  /* padding-top: 18px; */
   /* width: 200px; */
-  height: 200px;
+  height: 7.55vh;
 }
 .nav-child {
   height: 100%;
@@ -89,10 +91,18 @@ nav {
 /* HEADER END */
 /* HERO START */
 .hero {
-  background-color: #B3E283;
+  /* background-color: #B3E283; */
   /* background-image: url(https://picsum.photos/300/600);
   background-repeat: repeat-x; */
+  background-image: url(./assets/190501-Healthcare.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: hero 2s ease-in 1s 1 normal forwards;
 }
+
+
 .hero-content {
   margin: auto;
   padding: 30px 0;
@@ -100,12 +110,61 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+
 }
 .hero-img {
   /* border-radius: 0 50%  0; */
   /* border-radius: 0 50% 50% 0; */
+  
   width: 50%;
   min-width: 280px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateX(-48px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateX(-26px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateX(-13px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateX(-6.5px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateX(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87%,
+	98% {
+		animation-timing-function: ease-out;
+		transform: translateX(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0px);
+	}
 }
 .hero-qualities {
   display: flex;
@@ -119,6 +178,11 @@ nav {
   column-gap: 10px;
   align-items: center;
   text-align: center;
+  font-weight: 600;
+  background-color: white;
+  /* filter: blur(0.10px); */
+  border-radius: 15px;
+  padding: 5px;
 }
 .quality-service:hover {
   /* background-color: black; */
@@ -191,6 +255,7 @@ nav {
   border-radius: 10px;
   align-items: center;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  animation: myAnim 2s ease 0s 1 normal forwards;
 }
 .product-img {
   width: 80%;
@@ -243,6 +308,7 @@ nav {
   align-items: center;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  animation: myAnim 2s ease 0s 1 normal forwards;
 }
 .product-card-hidden:hover {
 }
@@ -285,7 +351,7 @@ footer {
 .footer-logo {
   /* margin: 0; */
   /* overflow: hidden; */
-  height: 180px;
+  height: 80px;
 }
 .adi-footer{
   width: 100%;
@@ -321,7 +387,7 @@ footer {
   .footer-logo {
     margin: auto;
     /* overflow: hidden; */
-    height: 20vhpx;
+    height: 10vh;
   }
   .adi-footer{
     flex-direction: column;
@@ -339,3 +405,4 @@ footer {
     list-style: none;
   }
 }
+/* Animations */
