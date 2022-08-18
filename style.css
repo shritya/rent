@@ -7,6 +7,21 @@
 body {
   font-family: "Poppins", "Inter", sans-serif;
 }
+.stick{
+  position: fixed;
+}
+.stick-img{
+  top: 78vh;
+  left: 94vw;
+  position: absolute;
+  height: 50px;
+}
+@media screen and (max-width:1024px){
+  .stick-img{
+    top: 85vh;
+  left: 84vw;
+  }
+}
 header {
   /* background-color: #B3E283; */
 
@@ -83,21 +98,7 @@ nav {
 }
 /* HEADER END */
 /* HERO START */
-.stick{
-  position: fixed;
-}
-.stick-img{
-  top: 78vh;
-  left: 94vw;
-  position: absolute;
-  height: 50px;
-}
-@media screen and (max-width:1024px){
-  .stick-img{
-    top: 85vh;
-  left: 84vw;
-  }
-}
+
 .hero {
   background-image: url(./assets/190501-Healthcare.jpg);
   height: 100%;
