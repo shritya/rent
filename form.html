@@ -8,24 +8,25 @@
     <title>24/7 Health Rental</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <script
-		src="https://code.jquery.com/jquery-3.4.1.js"
-		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-		crossorigin="anonymous"></script>
-	<script>
-		function SubForm (){
-			$.ajax({
-				url:"https://api.apispreadsheets.com/data/wa2xVXrH2kB0ycks/",
-				type:"post",
-				data:$("#myForm").serializeArray(),
-				success: function(){
-					alert("Order Confirmed")
-				},
-				error: function(){
-					alert("There was an error :(")
-				}
-			});
-		}
-	</script>
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function SubForm() {
+        $.ajax({
+          url: "https://api.apispreadsheets.com/data/wa2xVXrH2kB0ycks/",
+          type: "post",
+          data: $("#myForm").serializeArray(),
+          success: function () {
+            alert("Order Confirmed");
+          },
+          error: function () {
+            alert("There was an error :(");
+          },
+        });
+      }
+    </script>
   </head>
   <body>
     <!-- HEADER START -->
@@ -88,29 +89,33 @@
     <form id="myForm">
       <label>Name</label>
       <input class="name" placeholder="Enter Your Name" name="Name" />
-      
       <label>Number</label>
       <input class="name" placeholder="Enter Your Number" name="Number" />
-      
+      <label>Whatapp_number</label>
+      <input class="name" name="Whatapp_number" />
       <label>Address 1</label>
       <input class="name" placeholder="Enter Your Address 1" name="Address_1" />
-      
       <label>Address 2</label>
       <input class="name" placeholder="Enter Your Address 2" name="Address_2" />
-      
       <label>Pincode</label>
       <input class="pincode" placeholder="Enter Your Pincode" name="pincode" />
-      
       <label>From Date</label>
-      <input class="name" type="date" placeholder="From Date" name="from_date" />
-      
+      <input
+        class="name"
+        type="date"
+        placeholder="From Date"
+        name="from_date"
+      />
       <label>Upto Date</label>
-      <input class="name" type="date" placeholder="Upto Date" name="upto_date" />
-      
+      <input
+        class="name"
+        type="date"
+        placeholder="Upto Date"
+        name="upto_date"
+      />
     </form>
     <section class="margin">
-      
-      <button class="btn" onclick='SubForm()'>Submit</button>
+      <button class="btn" onclick="SubForm()">Submit</button>
     </section>
     <section class="end">
       <footer>
@@ -147,4 +152,4 @@
     </section>
   </body>
 </html>
-<input type="date" name="" id="">
+<input type="date" name="" id="" />
