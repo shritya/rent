@@ -29,7 +29,9 @@ header {
   /* background-color: #85EF47; */
   background-color: black;
   color: white;
-  height: 9vh;
+  /* height: 9vh; */
+  height: 20%;
+
 }
 nav {
   display: flex;
@@ -92,12 +94,17 @@ nav a {
 }
 @media screen and (max-width: 600px) {
   .nav-child {
-    display: none;
+    /* display: none; */
+    column-gap: 0;
+    font-size: 11px;
   }
   nav {
     margin: 0;
+    padding-top: 3px;
     width: 100%;
     justify-content: center;
+    flex-direction: column;
+    /* row-gap: 10px; */
   }
 }
 /* HEADER END */
@@ -122,6 +129,7 @@ nav a {
 .hero-img {
   width: 50%;
   min-width: 280px;
+  border-radius: 12px;
 }
 @keyframes myAnim {
   0% {
@@ -225,6 +233,9 @@ nav a {
     row-gap: 10px;
     align-items: center;
   }
+  body{
+    font-size: 12px;
+  }
 }
 #myForm {
   width: 70%;
@@ -304,6 +315,9 @@ h1 {
 footer {
   color: white;
   display: flex;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
   flex-direction: column;
   width: 80%;
   flex-wrap: wrap;
