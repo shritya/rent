@@ -9,6 +9,8 @@ body {
 }
 .stick {
   position: fixed;
+  z-index: 1;
+
 }
 .stick-img {
   top: 78vh;
