@@ -98,7 +98,7 @@ nav a {
   .nav-child {
     /* display: none; */
     column-gap: 0;
-    font-size: 11px;
+    font-size: 13px;
   }
   nav {
     margin: 0;
@@ -236,7 +236,7 @@ nav a {
     align-items: center;
   }
   body{
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 #myForm {
