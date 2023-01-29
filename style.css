@@ -192,7 +192,7 @@ nav {
   }
 }
 .hero {
-  border-radius: 0 0 40px 40px;
+  /* border-radius: 0 0 40px 40px; */
   background-image: url(./assets/190501-Healthcare.jpg);
   height: 100%;
   width: 100%;
@@ -303,7 +303,7 @@ nav {
 }
 @media screen and (max-width: 1024px) {
   .hero{
-    border-radius: 50px 50px 40px 40px;
+    border-radius: 50px 50px 0px 0px;
   }
   .hero-content {
     flex-direction: column;
@@ -337,7 +337,7 @@ nav {
 /* PRODUCT ONE */
 .product-adwait {
   background-color: white;
-  border-radius: 70px;
+  border-radius: 0 0 70px 70px;
   padding: 50px 0 50px 0;
 }
 .section-heading{
