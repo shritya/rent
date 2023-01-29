@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="form.css" />
     <title>AdiShakti Health Rental Services</title>
-    <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon-16x16.png"
+      type="image/x-icon"
+    />
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -29,24 +33,24 @@
     </script>
   </head>
   <body>
-    <!-- HEADER START -->
-    <a class="stick" href="https://wa.me/+917887805948"
-      ><img class="stick-img" src="./assets/whatsapp.svg" alt=""
-    /></a>
-
     <section class="navbar">
       <header>
         <nav>
-          <a href="index.html">
-            <img src="./assets/logo.png" alt="Logo" class="logo" />
-          </a>
+          <div class="nav-left">
+            <a href="index.html">
+              <img src="./assets/logo.png" alt="Logo" class="logo" />
+            </a>
+          </div>
           <!-- <h1>ADISHAKTI</h1> -->
-          <ul class="nav-child">
-            <li class="rest-pg"><a href="index.html">Home</a></li>
-            <li class="rest-pg"><a href="ourservice.html">Our Serivce</a></li>
-            <li class="rest-pg"><a href="whoweare.html">Who are we?</a></li>
-            <li class="rest-pg"><a href="product.html">Products</a></li>
-          </ul>
+          <div class="nav-right">
+
+            <ul class="nav-child">
+              <li class="rest-pg"><a href="index.html">Home</a></li>
+              <li class="rest-pg"><a href="ourservice.html">Our Serivce</a></li>
+              <li class="rest-pg"><a href="whoweare.html">Who are we?</a></li>
+              <li class="rest-pg"><a href="product.html">All Products</a></li>
+            </ul>
+          </div>
         </nav>
       </header>
     </section>
@@ -61,14 +65,14 @@
               class="quality-img"
               src="./assets/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg"
               alt="S"
-            />Easy To buy
+            />Cash On Delivery
           </li>
           <li class="quality-service">
             <img
               class="quality-img"
               src="./assets/heart_plus_FILL0_wght400_GRAD0_opsz48.svg"
               alt="S"
-            />Low Cost
+            />Clean Equipment
           </li>
           <li class="quality-service">
             <img
@@ -82,27 +86,50 @@
               class="quality-img"
               src="./assets/inventory_FILL0_wght400_GRAD0_opsz48.svg"
               alt="S"
-            />Easy Return
+            />Low Rent
           </li>
         </ul>
       </div>
     </section>
     <!-- HERO SECTION END -->
     <!-- FORM START -->
-    <h1>Confirm Your Order</h1>
     <form id="myForm">
+      <h1>Confirm Your Order</h1>
       <label>Your Item Name</label>
-      <input type="text" name="Item" class="name" placeholder="Enter Your Item Name">
+      <select name="Item" class="name">
+        <option name="Item" value="">Fowler Bed</option>
+        <option name="Item" value="">Adjustable Hospital Bed</option>
+        <option name="Item" value="">Remote Control Wheelchair</option>
+        <option name="Item" value="">Oxygen Concentrator</option>
+        <option name="Item" value="">Aluminium Chair</option>
+        <option name="Item" value="">Toilet Chair</option>
+        <option name="Item" value="">BP Monitor</option>
+        <option name="Item" value="">Wheelchair With Accesibility</option>
+        <option name="Item" value="">Oxygen Cylinder</option>
+        <option name="Item" value="">Paitent Walker</option>
+        <option name="Item" value="">Walking Stick</option>
+      </select>
+      <!-- <input type="text" name="Item" class="name" placeholder="Enter Your Item Name"> -->
       <label>Name</label>
       <input class="name" placeholder="Enter Your Name" name="Name" />
-      <label>Number</label>
-      <input class="name" type="number" placeholder="Enter Your Number" name="Number" />
+      <label>Phone Number</label>
+      <input
+        class="name"
+        type="number"
+        placeholder="Enter Your Number"
+        name="Number"
+      />
       <label>Address 1</label>
-      <input class="name" placeholder="Enter Your Address 1" name="Address_1" />
-      <label>Address 2</label>
-      <input class="name" placeholder="Enter Your Address 2" name="Address_2" />
+      <input class="name" placeholder="House no./Building Name/Locality" name="Address_1" />
+      <label>Landmark</label>
+      <input class="name" placeholder="Landmark/Area No." name="Address_2" />
       <label>Pincode</label>
-      <input class="pincode" type="number" placeholder="Enter Your Pincode" name="pincode" />
+      <input
+        class="name"
+        type="number"
+        placeholder="Enter Your Pincode"
+        name="pincode"
+      />
       <label>From Date</label>
       <input
         class="name"
@@ -117,9 +144,9 @@
         placeholder="Upto Date"
         name="upto_date"
       />
+      <button class="btn" onclick="SubForm()">Submit</button>
     </form>
     <section class="margin">
-      <button class="btn" onclick="SubForm()">Submit</button>
     </section>
     <section class="end">
       <footer>
@@ -145,7 +172,7 @@
               </ul>
             </div>
           </section>
-          <h4>
+          <h4 class="logo-footer-txt">
             ADISHAKTI | &#169;
             <span class="footer-contact"
               >Contact&nbsp;:&nbsp;+91&nbsp;7887805948 +91&nbsp;7378837011</span

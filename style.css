@@ -6,6 +6,11 @@
 }
 body {
   font-family: "Poppins", "Inter", sans-serif;
+  background-color: black;
+}
+.navbar{
+  max-height: 150px;
+  min-height: 50px;
 }
 header {
   /* background-color: #B3E283; */
@@ -13,7 +18,7 @@ header {
   /* background-color: #85EF47; */
   background-color: black;
   color: white;
-  height: 20%;
+  height: 100%;
 }
 nav {
   display: flex;
@@ -21,7 +26,21 @@ nav {
   align-items: center;
   margin: auto;
   height: 100%;
-  width: 90%;
+  width: 100%;
+}
+.nav-left{
+  width: 20%;
+  text-align: center;
+  align-items: center;
+  /* padding-left: 20px; */
+}
+.nav-right{
+  background-color: white;
+  width: 65%;
+  padding: 0.8%;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 60px 0 0px 0px;
 }
 .logo {
   /* top: 5px; */
@@ -32,33 +51,50 @@ nav {
 .nav-child {
   height: 100%;
   display: flex;
-  align-items: center;
-  column-gap: 10px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  column-gap: 10%;
+  background-color: white;
+  /* column-gap: ; */
+  /* border: 1px solid black; */
+  border-radius: 25px 25px 25px 25px; 
 }
-.current-pg {
+/* .current-pg {
   background-color: rgb(255, 199, 56);
   color: black;
   display: flex;
   align-items: center;
-}
+} */
 .current-pg:hover {
   color: blue;
   border: 2px solid lightcyan;
 }
 .rest-pg {
   display: flex;
+  column-gap: 20px;
   align-items: center;
+  height: 100px;
 }
+
 .rest-pg:hover {
-  border: 3px solid lightcyan;
-  background-color: rgb(255, 199, 56);
+  border: 0px solid lightcyan;
+  border-radius: 25px;
+  /* background-color: green; */
 }
 .rest-pg a {
   text-decoration: none;
-  color: white;
+  color: green;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
 }
 .rest-pg a:hover {
-  color: black;
+  /* height: 100%; */
+  /* background-color: black; */
+  /* border: 0px solid green; */
+  /* border-radius: 30%; */
+  /* box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.75); */
 }
 .current-pg a {
   text-decoration: none;
@@ -71,11 +107,26 @@ nav {
   align-self: center;
   height: 100%;
 }
+@media screen and (max-width: 1080px){
+  .nav-right{
+    border-radius: 30px;
+  }
+}
 @media screen and (max-width: 600px) {
   .nav-child {
     /* display: none; */
     column-gap: 0;
     font-size: 13px;
+    
+  }
+  .nav-left{
+    width: auto;
+    margin-bottom: 7px;
+  }
+  .nav-right{
+    width: auto;
+    border-radius: 30px;
+    margin-top: 7px;
   }
   nav {
     margin: 0;
@@ -94,28 +145,61 @@ nav {
 .stick {
   position: fixed;
   z-index: 1;
-
+  bottom: 8%;
+  right: 4%;
+  /* position: absolute; */
 }
 .stick-img {
-  top: 78vh;
-  left: 94vw;
-  position: absolute;
+  top: -50px;
+  right: -50px;
+  /* position: absolute; */
   height: 50px;
+  animation: wp 1s ease 3s infinite reverse forwards;
+}
+@keyframes wp {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(10px);
+	}
+
+	80% {
+		transform: translateX(8px);
+	}
+
+	90% {
+		transform: translateX(-8px);
+	}
 }
 @media screen and (max-width: 1024px) {
   .stick-img {
-    top: 85vh;
-    left: 89vw;
-    height: 35px;
+    top: 546px;
+    left: 329px;
+    height: 40px;
 
   }
 }
 .hero {
+  border-radius: 0 0 40px 40px;
   background-image: url(./assets/190501-Healthcare.jpg);
   height: 100%;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 0 0px 0px;
 }
 
 .hero-content {
@@ -218,6 +302,9 @@ nav {
   }
 }
 @media screen and (max-width: 1024px) {
+  .hero{
+    border-radius: 50px 50px 40px 40px;
+  }
   .hero-content {
     flex-direction: column;
     row-gap: 30px;
@@ -249,7 +336,12 @@ nav {
 /* PRODUCT SECTION START */
 /* PRODUCT ONE */
 .product-adwait {
+  background-color: white;
+  border-radius: 70px;
   padding: 50px 0 50px 0;
+}
+.section-heading{
+  color: green;
 }
 .product-section {
   text-align: center;
@@ -279,6 +371,10 @@ nav {
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
   /* animation: myAnim 2s ease 0s 1 normal forwards; */
   animation: myAnim 0.3s ease 0s 1 normal forwards;
+}
+.product-card h3{
+  color: green;
+
 }
 .product-card a {
   text-decoration: none;
@@ -362,9 +458,12 @@ nav {
     cursor: pointer;
     text-align: center;
     width: 73%;
+    height: 100%;
     box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.75);
   }
-
+  .product-img{
+    height: 230px;
+  }
   .product-card-hidden {
     display: none;
     box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.75);
@@ -408,6 +507,19 @@ footer {
 .links-footer li {
   list-style: none;
 }
+.links h2{
+  color: green;
+
+}
+.privacy-policy h2{  color: green;
+}
+.logo-footer-txt{
+  color: green;
+}
+.logo-footer-txt span{
+  color: white;
+}
+
 .privacy-policy li {
   list-style: none;
 }
