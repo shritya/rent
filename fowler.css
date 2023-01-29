@@ -13,9 +13,6 @@ body {
   min-height: 50px;
 }
 header {
-  /* background-color: #B3E283; */
-
-  /* background-color: #85EF47; */
   background-color: black;
   color: white;
   height: 100%;
@@ -32,7 +29,6 @@ nav {
   width: 20%;
   text-align: center;
   align-items: center;
-  /* padding-left: 20px; */
 }
 .nav-right{
   background-color: white;
@@ -43,9 +39,6 @@ nav {
   border-radius: 60px 0 0px 0px;
 }
 .logo {
-  /* top: 5px; */
-  /* padding-top: 18px; */
-  /* width: 200px; */
   height: 7.55vh;
 }
 .nav-child {
@@ -56,16 +49,8 @@ nav {
   align-content: center;
   column-gap: 10%;
   background-color: white;
-  /* column-gap: ; */
-  /* border: 1px solid black; */
   border-radius: 25px 25px 25px 25px; 
 }
-/* .current-pg {
-  background-color: rgb(255, 199, 56);
-  color: black;
-  display: flex;
-  align-items: center;
-} */
 .current-pg:hover {
   color: blue;
   border: 2px solid lightcyan;
@@ -80,7 +65,6 @@ nav {
 .rest-pg:hover {
   border: 0px solid lightcyan;
   border-radius: 25px;
-  /* background-color: green; */
 }
 .rest-pg a {
   text-decoration: none;
@@ -88,13 +72,6 @@ nav {
   font-weight: 500;
   width: 100%;
   height: 100%;
-}
-.rest-pg a:hover {
-  /* height: 100%; */
-  /* background-color: black; */
-  /* border: 0px solid green; */
-  /* border-radius: 30%; */
-  /* box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.75); */
 }
 .current-pg a {
   text-decoration: none;
@@ -192,7 +169,7 @@ nav {
   }
 }
 .hero {
-  border-radius: 0 0 0px 0px;
+  /* border-radius: 0 0 0px 0px; */
   background-image: url(./assets/190501-Healthcare.jpg);
   height: 100%;
   width: 100%;
@@ -304,7 +281,7 @@ nav {
 }
 @media screen and (max-width: 1024px) {
   .hero{
-    border-radius: 50px 50px 0px 0px;
+    /* border-radius: 50px 50px 0px 0px; */
   }
   .hero-content {
     flex-direction: column;
@@ -336,18 +313,14 @@ nav {
 }
 .product {
   background-color: white;
-  /* border-radius: 75px 75px 0 0; */
   width: 100%;
   padding: 30px auto;
   justify-items: center;
   text-align: center;
 }
 .product-img {
-  /* animation: myAnim 2s ease 0s 1 normal forwards; */
-  animation: myAnim 0.3s ease 0s 1 normal forwards;
-  width: 50%;
-  /* max-width: 00px; */
-  /* min-width: 40px; */
+  width: 20%;
+  min-width: 180px;
 }
 .description{
   width: 80%;
